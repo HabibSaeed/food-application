@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-heading {
+            color: #e74c3c;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-content {
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-link {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .dashboard-link:hover {
+            text-decoration: underline;
+        }
+
+        .admin-section {
+            margin-top: 20px;
+        }
+
+        .admin-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .admin-item .section-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .admin-item .section-details {
+            flex: 1;
+            text-align: left;
+            margin-left: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .admin-section .admin-action-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .admin-section .admin-action-btn:hover {
+            background-color: #d43528;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="dashboard-heading">Welcome Admin!</h2>
+        <div class="dashboard-content">
+            <p>Your Admin Dashboard Content Goes Here</p>
+            <div class="admin-section">
+                <div class="admin-item">
+                    <div class="section-title">Manage Vendors</div>
+                    <div class="section-details">View and edit vendor details</div>
+                    <button class="admin-action-btn">Manage</button>
+                </div>
+                <div class="admin-item">
+                    <div class="section-title">Manage Customers</div>
+                    <div class="section-details">View and edit customer details</div>
+                    <button class="admin-action-btn">Manage</button>
+                </div>
+                <div class="admin-item">
+                    <div class="section-title">View Order Statistics</div>
+                    <div class="section-details">Analyse order data and statistics</div>
+                    <button class="admin-action-btn">View</button>
+                </div>
+                <div class="admin-item">
+                    <div class="section-title">System Settings</div>
+                    <div class="section-details">Configure system settings and preferences </div>
+                    <button class="admin-action-btn"> Configure</button>
+                </div>
+            </div>
+        </div>
+        <a class="dashboard-link" href="./index.html">Logout</a>
+    </div>
+</body>
+
+</html>

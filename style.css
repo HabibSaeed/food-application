@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./pexels-lukas-616401.jpg");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    transition: all ease-in-out 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+.form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 0.5s;
+    background-color: #fff;
+    color: #007bff;
+}
+
+.form .switch-form-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+select option {
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        max-width: 90%;
+    }
+}

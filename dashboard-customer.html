@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-heading {
+            color: #3498db;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-content {
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .dashboard-link:hover {
+            text-decoration: underline;
+        }
+
+        .customer-cart {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .cart-details {
+            flex: 1;
+        }
+
+        .cart-product-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .cart-product-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .cart-quantity {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .cart-remove-btn {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cart-remove-btn:hover {
+            background-color: #d43528;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="dashboard-heading">Welcome Customer!</h2>
+        <div class="dashboard-content">
+            <p>Your Customer Dashboard Content Goes Here</p>
+            <div class="customer-cart">
+                <div class="cart-item">
+                    <img src="./photo-1565299624946-b28f40a0ae38.jpg" alt="Product 1">
+                    <div class="cart-details">
+                        <div class="cart-product-title">Product 1</div>
+                        <div class="cart-product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </div>
+                        <div class="cart-quantity">Quantity: 2</div>
+                    </div>
+                    <button class="cart-remove-btn">Remove</button>
+                </div>
+                <div class="cart-item">
+                    <img src="./photo-1632203171982-cc0df6e9ceb4.jpg" alt="Product 2">
+                    <div class="cart-details">
+                        <div class="cart-product-title">Product 2</div>
+                        <div class="cart-product-description">Pellentesque nec est vel dui posuere rhoncus quis non
+                            tellus.</div>
+                        <div class="cart-quantity">Quantity: 1</div>
+                    </div>
+                    <button class="cart-remove-btn">Remove</button>
+                </div>
+            </div>
+        </div>
+        <a class="dashboard-link" href="./index.html">Logout</a>
+    </div>
+</body>
+
+</html>
